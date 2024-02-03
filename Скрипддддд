@@ -1,0 +1,91 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("620tig2V's Old Quests Script", "Synapse")
+
+-- MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("Fabby Quest", "Loads in the fabbie boss (you need to be leader for this to work", function()
+    workspace.QuestMakerEvent:FireServer(100)
+end)
+
+MainSection:NewButton("gingerbread fight", "Loads in the gingerbread Fight (you need to be leader for this to work", function()
+    workspace.QuestMakerEvent:FireServer(99)
+end)
+
+MainSection:NewButton("xmas fight", "Loads in the xmas Fight (you need to be leader for this to work", function()
+    workspace.QuestMakerEvent:FireServer(101)
+end)
+
+MainSection:NewButton("Inner Cloud", "Takes you to the Inner-Cloud", function()    
+    local plr = game.Players.LocalPlayer;
+local Char = game.Players.LocalPlayer.Character;
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd1 = CFrame.new(631, 26, -46);
+local Time1 = 5;
+local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
+local CFrameEnd2 = CFrame.new(484, 68, 270);
+local Time2 = 5;
+local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
+if game.PlaceId ~= 1930863474 then
+Teleporting:Teleport(1930863474, plr)
+else
+tween1:Play()
+tween1.Completed:Wait(X)
+end
+end)
+
+MainSection:NewButton("Winter Place", "Takes you to the Winter Place", function()
+    local plr = game.Players.LocalPlayer;
+local Char = game.Players.LocalPlayer.Character;
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd1 = CFrame.new(631, 26, -46);
+local Time1 = 5;
+local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
+local CFrameEnd2 = CFrame.new(484, 68, 270);
+local Time2 = 5;
+local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
+if game.PlaceId ~= 1930866268 then
+Teleporting:Teleport(1930866268, plr)
+else
+tween1:Play()
+tween1.Completed:Wait(X)
+end
+end)
+
+MainSection:NewButton("The Secret Place", "Takes you to the The Secret Place", function()
+    local plr = game.Players.LocalPlayer;
+local Char = game.Players.LocalPlayer.Character;
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd1 = CFrame.new(631, 26, -46);
+local Time1 = 5;
+local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
+local CFrameEnd2 = CFrame.new(484, 68, 270);
+local Time2 = 5;
+local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
+if game.PlaceId ~= 1930665568 then
+Teleporting:Teleport(1930665568, plr)
+else
+tween1:Play()
+tween1.Completed:Wait(X)
+end
+end)
+
+MainSection:NewButton("Chamber Of Zeg", "Takes you to the Chamber Of Zeg", function()
+    local plr = game.Players.LocalPlayer;
+local Char = game.Players.LocalPlayer.Character;
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd1 = CFrame.new(631, 26, -46);
+local Time1 = 5;
+local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
+local CFrameEnd2 = CFrame.new(484, 68, 270);
+local Time2 = 5;
+local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
+if game.PlaceId ~= 5266993598 then
+Teleporting:Teleport(5266993598, plr)
+else
+tween1:Play()
+tween1.Completed:Wait(X)
+end
+end)
